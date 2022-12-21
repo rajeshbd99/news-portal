@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BBC BANGLA BLOG</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
-<body>
-    
+
+<body class="container bg-light">
+    <header>
+        <section>
+            <nav class="navbar navbar-expand mt-4 d-flex justify-content-between align-items-center">
+                <a class="navbar-brand"><span class="bg-primary text-white px-2 py-1 rounded-2 me-2">BBC</span><span
+                        class="text-primary fw-semibold">BANGLA</span></a>
+                <ul class="navbar-nav mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link fw-2  p-0 pb-1" aria-current="page" href="index.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary fw-semibold border-2 border-bottom border-primary p-0 pb-1 mx-sm-4 mx-2"
+                            aria-current="page" href="blog.html">Blog</a>
+                    </li>
+
+                    <li>
+                        <img class="rounded-circle" src="img/download.png" alt="" height="50px" width="50x">
+                    </li>
+                </ul>
+                </div>
+        </section>
+        <hr>
+    </header>
+
+    <section>
+        <div class="card border-secondary mb-3">
+            <div class="card-header h5"> 1.What is the differences between var, let, and const variable?</div>
+            <div class="card-body text-secondary">
+                <p class="card-text">VAR: Var declarations are globally scoped or function scoped. That means if a
+                    variable
+                    is declared with var outside a function then it is in the global scope(accessible anywhere).
+                    Otherwise, if they are inside a function we can only access them inside the function.,<br>LET: It's
+                    an
+                    enhanced version of var, it solves all the problems that come with the var keyword. Like, let is a
+                    block-scoped variable and we cannot re-declared but can be updated(re-assigned).
+                    <br>CONST: Const declarations share some similarities with let declarations, but const variables
+                    cannot be updated or re-declared. It maintains the constant values.
+                    Unlike var and let, if we are using const then it must be initialized at the same time when we
+                    declared the variable.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="card border-secondary mb-3">
+            <div class="card-header h5">2. What is the differences between map(),forEach(),filter() and Find()?</div>
+            <div class="card-body text-secondary">
+                <p class="card-text">
+                    <li>forEach()=> .forEach(), is used to execute the same code on every element in an array but does
+                        not
+                        change the array and it returns undefined.</li>
+                    <li>filter()=> .filter() checks every element in an array to see if it meets a certain criteria and
+                        returns a new array with the elements that return truthy for the criteria.</li>
+                    <li>map()=> .map() executes the same code on every element in an array and returns a new array with
+                        the
+                        updated elements.</li>
+                    <li>find()=> .find() When you want to select a single element from an array.</li>
+                </p>
+            </div>
+    </section>
+    <section>
+        <div class="card border-secondary mb-3">
+            <div class="card-header h5">3. What is the differences between arrow function and regular function?</div>
+            <div class="card-body text-secondary">
+                <p class="card-text">Unlike regular functions, arrow functions do not have their own this . The
+                    value of
+                    this inside an arrow function remains the same throughout the lifecycle of the function and is
+                    always
+                    bound to the value of this in the closest non-arrow parent function.<br>Following are the main
+                    differences:
+                    <li>Syntax</li>
+                    <li>Arguments binding</li>
+                    <li>Using a new keyword</li>
+                    <li>Use of this keyword</li>
+                    <li>No duplicate named parameters</li>
+                </p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
 </body>
+
 </html>
